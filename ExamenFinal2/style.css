@@ -1,0 +1,15 @@
+#sumar{
+    background-color: green;
+}
+
+#reiniciar{
+    background-color: red;
+}
+
+.activo{
+    display: block;
+}
+
+.inactivo{
+    display: none;
+}

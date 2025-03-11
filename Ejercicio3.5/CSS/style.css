@@ -1,0 +1,336 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cabezera*/
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(156, 191, 204);
+    width: 100%;
+    padding: 20px;
+}
+
+header > img{
+    width: 20%;
+}
+
+.navegacion{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.bttnCabezera{
+    text-decoration: none;
+    color: white;
+}
+
+.bttnCabezera:hover{
+    text-decoration: none;
+    color: rgb(9, 0, 108);
+}
+
+header > p{
+    color: white;
+    margin: 10px;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+/*Secciones*/
+/*Nosotros*/
+#nosotros{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(201, 219, 225);
+    margin: 10px;
+    left: 0;
+}
+
+.infNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+}
+
+.infNos > h2{
+    margin: 10px;
+}
+
+#nosotros > img{
+    width: 50%;
+    border-radius: 10%;
+    padding: 40px;
+    margin: 10px;
+}
+
+/*Servicios*/
+#servicios{
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(201, 219, 225);
+}
+
+#servicios > h2{
+    text-align: center;
+    margin: 5px;
+}
+
+/*Con Grid*/
+.coloccacionDivSev {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 columnas, cada una ocupa un "fractions" (1fr) del espacio disponible */
+    gap: 20px;  /* Espacio entre los items de la grid */
+    padding: 20px;
+    margin: 10px;
+}
+
+.coloccacionDivSev > div {
+    background-color: rgb(159, 206, 221); /* Color de fondo para cada item */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.coloccacionDivSev > div i {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;  /* Si quieres hacer la imagen circular */
+}
+
+/* Con flex mas dificil
+.coloccacionDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(159, 206, 221);
+    padding: 20px;
+    margin: 10px;
+}
+
+.coloccacionDiv > div{
+    background-color: brown;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10%;
+}/*
+
+/*Portafolio*/
+#portafolio{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(201, 219, 225);
+    text-align: center;
+    margin: 10px;
+}
+
+#portafolio > h2{
+    margin: 5px;
+}
+
+/*Con Grid*/
+.coloccacionDivPort {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 4 columnas, cada una ocupa un "fractions" (1fr) del espacio disponible */
+    gap: 20px;  /* Espacio entre los items de la grid */
+    padding: 20px;
+    margin: 10px;
+}
+
+.coloccacionDivPort > div {
+    background-color: rgb(159, 206, 221); 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.coloccacionDivPort > div img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;  
+    margin: 10px;
+}
+
+/*Contacto*/
+#contacto{
+    background-color: rgb(201, 219, 225);
+    margin: 10px;
+}
+
+#contacto > h3{
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+#contacto > fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+fieldset > input{
+    margin: 10px;
+    text-align: center;
+    border: none;
+    height: 30px;
+}
+
+fieldset > textarea{
+    margin: 10px;
+    border: none;
+    text-align: center;
+}
+
+.bttnEnviar{
+    background-color: rgb(159, 206, 221);
+    color: white;
+    border: none;
+    width: 200px;
+}
+
+/*Pie de pagina*/
+footer{
+    background-color: rgb(159, 206, 221);
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.colDivFoo{
+    display: flex;
+}
+
+.colDivFoo > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.titFo{
+    margin: 10px;
+}
+
+.bttnfot{
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.bttnfot:hover{
+    color: white;
+}
+
+@media(max-width: 1024px){
+
+    header {
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    header > p {
+        margin: 0;
+        text-align: center; 
+        width: 100%;
+    }
+
+    /*Primero ponemos que no se vea el navegador cuando estamos en la media query*/
+    .navegacion{
+        display: none;
+    }
+
+    /*Y despues creamos la clase con la que queremos que se vea nuestro div*/
+    /*Ponemos el toggle (recuerdalo lo tienes en el js)*/
+    .activo{
+        display: flex;
+        flex-flow: column;
+        top: 150px;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        background-color: rgb(156, 191, 204);
+    }
+
+    .activo > a{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hamburguesa{
+        display: block;
+        font-size: 30px;
+        color: white;
+        margin-right: 10px; 
+        cursor: pointer;
+    }
+
+    #nosotros{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(201, 219, 225);
+        text-align: center;
+        margin: 10px;
+    }
+
+    #servicios{
+        padding: 20px;
+        margin: 10px;
+        background-color: rgb(201, 219, 225);
+    }
+
+    .coloccacionDivSev {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  /* 4 columnas, cada una ocupa un "fractions" (1fr) del espacio disponible */
+        gap: 20px;  /* Espacio entre los items de la grid */
+        padding: 20px;
+    }
+
+    .coloccacionDivPort {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  /* 4 columnas, cada una ocupa un "fractions" (1fr) del espacio disponible */
+        gap: 20px;  /* Espacio entre los items de la grid */
+        padding: 20px;
+    }
+    
+}
+
+@media(max-width:768px){
+
+    header > p{
+        display: none;
+    }
+
+    .colDivFoo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

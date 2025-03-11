@@ -1,0 +1,31 @@
+.marcar{
+    text-decoration: line-through;
+}
+
+.noMarcar{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    text-align: center;
+    block-size: 40px;
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}

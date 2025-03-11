@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2>Contador de clicks</h2>
+
+    <div>
+        <p>Contador: <p id="numero">0</p></p>
+        <button id="sumar" onclick="sumar()">Sumar click</button>
+        <button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <h2>Añadir comentarios: </h2>
+
+    <form action="" name="form1">
+        <label for="texto">Introduce un comentario: </label>
+        <input type="text" name="textoAnyadir" id="textoAnyadir">
+    </form>
+
+    <div>
+        <button type="button" onclick="anyadirP()">Añadir comentario</button>
+        <button type="button" onclick="eliminarP()">Eliminar comentario</button>
+        <p>Comentarios: </p>
+    </div>
+
+    <div id="comentarios">
+        
+    </div>
+
+    <script src="./Script.js"></script>
+
+</body>
+</html>
