@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Ejercicio.js" defer></script>
+    <link rel="stylesheet" href="Ejercicio.css">
+</head>
+<body>
+
+    <h1>Agencia de Viajes</h1>
+
+    <form id="formulario" action="Resultados.html" method="post">
+
+        <label for="">Origen</label>
+        <input type="text" name="" id="origen" required>
+
+        <label for="">Destino</label>
+        <input type="text" name="" id="destino" required>
+
+        <select name="Origen" id="origenVuelo" required>
+            <option value="0" selected>Origen</option>
+            <option value="1">Palma</option>
+            <option value="2">Madrid</option>
+            <option value="3">Barcelona</option>
+        </select> 
+
+        <select name="Destino" id="dsestinoVuelo" required>
+            <option value="0" selected>Destino</option>
+            <option value="1">Palma</option>
+            <option value="2">Madrid</option>
+            <option value="3">Barcelona</option>
+            <option value="4">Londres</option>
+            <option value="5">Paris</option>
+            <option value="6">Roma</option>
+        </select> 
+
+        <label for="">Fecha inicio</label>
+        <input type="date" name="" id="fechaInicio"  min="" required> 
+
+        <label for="">Fecha fin</label>
+        <input type="date" name="" id="fechaFin" required>
+
+        <label for="">Numero de adultos: </label>
+        <input type="number" name="" id="numAdultos" required min="1" placeholder="1">
+
+        <label for="">Numero de niños: </label>
+        <input type="number" name="" id="numNinos" required min="0" placeholder="0">
+
+        <label for="">Descuento Residente</label>
+        <input type="checkbox" name="" id="residente">
+        <label for="">Familia numerosa</label>
+        <input type="checkbox" name="" id="famNum">
+
+        <input type="submit" value="Buscar" id="busqueda">
+
+    </form>
+
+     <div id="Aviso">
+        <p class="inactivo" id="frase1">No es posible tener el mismo origen y destino</p>
+        <p class="inactivo" id="frase2">No existe este origen</p>
+        <p class="inactivo" id="frase3">No existe este destino</p>
+     </div>
+    
+</body>
+</html>
